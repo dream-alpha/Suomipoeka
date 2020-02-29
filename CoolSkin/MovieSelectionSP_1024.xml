@@ -1,0 +1,51 @@
+<screen name="MovieSelectionSP" position="0,0" size="1024,576" backgroundColor="#18080911" title="Suomipoeka" flags="wfNoBorder">
+	<widget source="Title" render="Label" position="50,20" size="720,20" font="Regular;20" halign="center" foregroundColor="#32A834" backgroundColor="#18080911" transparent="1" />
+	<ePixmap pixmap="skin_default/icons/clock.png" position="770,20" zPosition="1" size="14,14" alphatest="on" />
+	<widget source="global.CurrentTime" render="Label" position="790,18" size="80,20" font="Regular;20" halign="left" foregroundColor="#00bab329" backgroundColor="#18080911" shadowColor="#000000" transparent="1">
+		<convert type="ClockToText">WithSeconds</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="875,18" size="100,20" font="Regular;20" halign="right" foregroundColor="#00bab329" backgroundColor="#18080911" shadowColor="#000000" transparent="1">
+		<convert type="ClockToText">Format:%d.%m.%Y</convert>
+	</widget>
+	<widget source="session.VideoPicture" render="Pig" position="0,0" size="1,1" zPosition="3" backgroundColor="#ff000000" />
+	<widget name="list" position="50,43" size="935,330" zPosition="2" itemHeight="22" CoolFont="Regular;20" CoolDirPos="815" CoolMoviePos="30" CoolMovieSize="835" CoolDatePos="777" CoolTimePos="867" scrollbarMode="showNever" backgroundColor="#18080911" transparent="1" />
+	<widget name="wait" position="0,200" size="1024,27" zPosition="1" font="Regular;25" foregroundColor="#00bab329" backgroundColor="#18080911" halign="center" valign="center" />
+
+	<eLabel position="50,381" size="920,2" backgroundColor="#32A834" zPosition="1" />
+	<eLabel position="50,413" size="920,2" backgroundColor="#32A834" zPosition="1" />
+	<eLabel position="50,381" size="2,34" backgroundColor="#32A834" zPosition="1" />
+	<eLabel position="970,381" size="2,34" backgroundColor="#32A834" zPosition="1" />
+	<widget source="Service" render="Label" position="52,388" size="528,20" font="Regular;20" halign="center" foregroundColor="#32A834" backgroundColor="#18080911" transparent="1">
+		<convert type="MovieInfo">RecordServiceName</convert>
+	</widget>
+	<widget source="Service" render="Label" position="575,388" size="150,20" font="Regular;20" halign="left" foregroundColor="#32A834" backgroundColor="#18080911" transparent="1">
+		<convert type="ServiceTime">StartTime</convert>
+		<convert type="ClockToText">Format:%d.%m.%y</convert>
+	</widget>
+	<widget source="Service" render="Label" position="666,388" size="55,20" foregroundColor="#32A834" backgroundColor="#18080911" font="Regular;20" halign="left" >
+		<convert type="ServiceTime">StartTime</convert>
+		<convert type="ClockToText" />
+	</widget>
+	<widget source="Service" render="Label" position="719,388" size="70,20" foregroundColor="#32A834" backgroundColor="#18080911" font="Regular;20" halign="left" >
+		<convert type="ServiceTime">EndTime</convert>
+		<convert type="ClockToText">Format:- %H:%M </convert>
+	</widget>
+	<widget source="Service" render="Label" position="792,388" size="100,20" font="Regular;20" halign="left" foregroundColor="#32A834" backgroundColor="#18080911" transparent="1">
+		<convert type="ServiceTime">Duration</convert>
+		<convert type="ClockToText">InMinutes</convert>
+	</widget>
+	<widget name="FileSize" position="865,388" size="100,20" font="Regular;20" halign="right" foregroundColor="#32A834" backgroundColor="#18080911" transparent="1" />
+
+	<widget source="Service" render="Label" position="50,425" size="935,110" font="Regular; 18" foregroundColor="#00bab329" backgroundColor="#18080911" transparent="1" halign="center" valign="top">
+		<convert type="EventName">ExtendedDescription</convert>
+	</widget>
+	
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Suomipoeka/img/key-red.png" position="70,537" size="18,18" alphatest="on" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Suomipoeka/img/key-green.png" position="320,537" size="18,18" alphatest="on" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Suomipoeka/img/key-yellow.png" position="570,537" size="18,18" alphatest="on" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Suomipoeka/img/key-blue.png" position="820,537" size="18,18" alphatest="on" />
+	<widget name="key_red" position="95,537" size="145,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="#9F1313" backgroundColor="#18080911" transparent="1" />
+	<widget name="key_green" position="345,537" size="145,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="#00389416" backgroundColor="#18080911" transparent="1" />
+	<widget name="key_yellow" position="595,537" size="145,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="#B59E01" backgroundColor="#18080911" transparent="1" />
+	<widget name="key_blue" position="845,537" size="145,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="#1E28B6" backgroundColor="#18080911" transparent="1" />
+</screen>

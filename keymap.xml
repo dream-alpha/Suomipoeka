@@ -1,0 +1,89 @@
+<keymap>
+	<map context="PluginPlayerActions">
+		<device name="dreambox remote control (native)">
+			<key id="KEY_TV"		mapto="leavePlayer" flags="m" />
+			<key id="KEY_STOP"		mapto="leavePlayer" flags="m" />
+			<key id="KEY_EXIT"		mapto="leavePlayer" flags="m" />
+			<key id="KEY_ESC"		mapto="leavePlayer" flags="m" />
+		</device>
+		<device name="dreambox advanced remote control (native)">
+			<key id="KEY_TV"		mapto="leavePlayer" flags="m" />
+			<key id="KEY_STOP"		mapto="leavePlayer" flags="m" />
+			<key id="KEY_EXIT"		mapto="leavePlayer" flags="m" />
+			<key id="KEY_ESC"		mapto="leavePlayer" flags="m" />
+		</device>
+		<device name="dreambox ir keyboard">
+			<key id="KEY_TV"		mapto="leavePlayer" flags="m" />
+			<key id="KEY_STOP"		mapto="leavePlayer" flags="m" />
+			<key id="KEY_EXIT"		mapto="leavePlayer" flags="m" />
+			<key id="KEY_ESC"		mapto="leavePlayer" flags="m" />
+		</device>
+		<key id="KEY_TV"			mapto="leavePlayer" flags="m" />
+		<key id="KEY_STOP"			mapto="leavePlayer" flags="m" />
+		<key id="KEY_CHANNELUP"		mapto="nextBouquet" flags="m" />
+		<key id="KEY_CHANNELDOWN"	mapto="prevBouquet" flags="m" />
+		<key id="KEY_RADIO"			mapto="bRADIO"		flags="m" />
+		<key id="KEY_INFO"			mapto="bInfo"		flags="m" />
+		<key id="KEY_EXIT"			mapto="leavePlayer" flags="m" />
+		<key id="KEY_ESC"			mapto="leavePlayer" flags="m" />
+	</map>
+        
+	<map context="PluginMovieSelectionActions">
+		<key id="\x0a"				mapto="bOK" flags="b" />
+		<key id="\x0a"				mapto="bOKL" flags="l" />
+		<key id="\x1b"				mapto="bEXIT" flags="m" />
+		<!-- use this on rcu, ok? -->
+		<key id="KEY_OK"			mapto="bOK" flags="b" />
+		<key id="KEY_OK"			mapto="bOKL" flags="l" />
+		<key id="KEY_EXIT"			mapto="bEXIT" flags="m" />
+		<key id="KEY_ESC"			mapto="bEXIT" flags="m" />
+		<key id="KEY_ENTER"			mapto="bOK" flags="b" />
+		<key id="KEY_ENTER"			mapto="bOKL" flags="l" />
+
+		<key id="KEY_MENU"			mapto="bMENU" flags="b" />
+		<key id="KEY_INFO"			mapto="bINFO" flags="b" />
+		<key id="KEY_MENU"			mapto="bMENUL" flags="l" />
+		<key id="KEY_INFO"			mapto="bINFOL" flags="l" />
+
+		<key id="KEY_RED"			mapto="bRed" flags="b" />
+		<key id="KEY_GREEN"			mapto="bGreen" flags="b" />
+		<key id="KEY_YELLOW"		mapto="bYellow" flags="b" />
+		<key id="KEY_BLUE"			mapto="bBlue" flags="b" />
+		<key id="KEY_RED"			mapto="bRedL" flags="l" />
+		<key id="KEY_GREEN"			mapto="bGreenL" flags="l" />
+		<key id="KEY_YELLOW"		mapto="bYellowL" flags="l" />
+		<key id="KEY_BLUE"			mapto="bBlueL" flags="l" />
+
+		<key id="KEY_VIDEO"			mapto="bVIDEO" flags="mr" />
+		<key id="KEY_AUDIO"			mapto="bAUDIO" flags="b" />
+		<key id="KEY_STOP"			mapto="bAUDIO" flags="b" /> <!--For DM8000-->
+		<key id="KEY_TV"			mapto="bTV" flags="b" />
+		<key id="KEY_RADIO"			mapto="bRADIO" flags="b" />
+		<key id="KEY_TEXT"			mapto="bTEXT" flags="b" />
+		<key id="KEY_AUDIO"			mapto="bAUDIOL" flags="l" />
+		<key id="KEY_STOP"			mapto="bAUDIOL" flags="l" /> <!--For DM8000-->
+		<key id="KEY_TV"			mapto="bTVL" flags="l" />
+		<key id="KEY_RADIO"			mapto="bRADIOL" flags="l" />
+		<key id="KEY_TEXT"			mapto="bTEXTL" flags="l" />
+
+		<!--"DirectionActions"-->
+<!--		<key id="KEY_UP"		mapto="bUp" flags="m" />
+		<key id="KEY_DOWN"			mapto="bDown" flags="m" />
+		<key id="KEY_LEFT"			mapto="bLeft" flags="m" />
+		<key id="KEY_RIGHT"			mapto="bRight" flags="m" />
+		<key id="KEY_UP"			mapto="bUpRepeated" flags="r" />
+		<key id="KEY_DOWN"			mapto="bDownRepeated" flags="r" />
+		<key id="KEY_LEFT"			mapto="bLeftRepeated" flags="r" />
+		<key id="KEY_RIGHT"			mapto="bRightRepeated" flags="r" />-->
+		<key id="KEY_LEFT"			mapto="bLeftUp" flags="b" />
+		<key id="KEY_RIGHT"			mapto="bRightUp" flags="b" />
+		<key id="KEY_UP"			mapto="bUpUp" flags="b" />
+		<key id="KEY_DOWN"			mapto="bDownUp" flags="b" />
+		<key id="KEY_NEXT"			mapto="bArrowR" flags="b" />
+		<key id="KEY_PREVIOUS"		mapto="bArrowL" flags="b" />
+		<key id="KEY_NEXT"			mapto="bArrowRL" flags="l" />
+		<key id="KEY_PREVIOUS"		mapto="bArrowLL" flags="l" />
+		<key id="KEY_CHANNELUP"		mapto="bBqtPlus" flags="b" />
+		<key id="KEY_CHANNELDOWN"	mapto="bBqtMnus" flags="b" />
+	</map>
+</keymap>
